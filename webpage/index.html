@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage">
+
+	<head>
+
+		<title>Schema.org Webpage Beispiel</title>
+		
+		<meta charset="UTF-8">
+	
+	</head>
+	
+	<body>
+
+		<section class="wrapper">
+
+			<header class="main-header">
+
+				<!-- page owner -->	
+				<section class="company-name" itemprop="reviewedBy" itemscope itemtype="https://schema.org/Organization">
+					
+					<!-- Organization/Person name and logo -->	
+					<div>
+						<div itemprop="brand" itemscope itemtype="https://schema.org/Organization">
+							<p itemprop="legalName">Musterfirma GmbH</p>
+							<figure itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+								<img itemprop="thumbnail" src="http://dummyimage.com/70x70/dedede/0b9fb3.jpg&text=L" width="35" height="35" alt="
+								Logo: Musterfirma GmbH">
+								<figcaption itemprop="caption">Musterfirma GmbH - Slogan</figcaption>
+							</figure>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- navigation -->
+				<section class="navigation">
+
+					<nav itemprop="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+						<ul>
+							<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" > <a href="#" itemprop="item"> <span itemprop="name">Referenzen</span> </a> </li>
+							<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <a href="#" itemprop="item"> <span itemprop="name">Über uns</span> </a> </li>
+							<li itemprop="itemListElement"itemscope itemtype="http://schema.org/ListItem"> <a href="#" itemprop="item"> <span itemprop="name">Partner</span> </a> </li>
+							<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <a href="#" itemprop="item"> <span itemprop="name">Kontakt</span> </a> </li>
+						</ul>
+					</nav>
+
+				</section>
+			
+			</header>
+
+			<!-- Main content -->
+			<main itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
+
+				<!-- Main article -->
+				<article class="article">
+					<header class="article-headline">
+						<h1 itemprop="headline">Meine Hauptüberschrift</h1>	
+					</header>
+					<div itemprop="text">
+						<p>content</p>
+						<p>content</p>
+					</div>
+
+					<!-- information about author/copyright of this article -->
+					<footer class="footer">
+						<div class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+							<p itemprop="name">Max Mustermann</p>
+						</div>
+						<div class="date">
+							<p>Erstellt am: <time itemprop="dateCreated">01.01.2015</time><p>
+						</div>
+						<div class="copyright">
+							<span itemprop="copyrightYear">2015</span>
+							<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Organization">
+								<p itemprop="legalName">Musterfirma GmbH</p>
+							</div>
+						</div>
+					</footer>
+				</article>
+
+				<!-- Sub articles just like main-article only headline should be itemprop="alternativeHeadline" -->
+				<article class="article">
+					<header>
+						<h2 itemprop="alternativeHeadline">2. Unterüberschrift</h2>
+					</header>
+					<div itemprop="text">
+						<p>Etwas text…</p>
+					</div>
+				</article>
+
+				<!-- more complex example about author-->
+				<!-- mit google+ verbinden: https://de.onpage.org/wiki/Authorship_Markup -->
+				<section class="person" itemprop="author" itemscope itemtype="https://schema.org/Person">
+					<p class="name" itemprop="name">Max Msutermann</p>
+					<div class="bday">
+						<p>birthday: <time itemprop="birthDate" >25.09.1990</time></p>
+					</div>
+					<div class="email">
+						<p><a itemprop="email" href="mailto:max@mustermann.de">max@mustermann.de</a></p>
+					</div>
+					<div class="job-title">
+						<p>Position: <span itemprop="jobTitle">Web-Worker</span></p>
+					</div>
+					<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="address">
+						<ul>
+							<li itemprop="addressLocality">City</li>
+							<li itemprop="streetAddress">Street address</li>
+							<li itemprop="postalCode">Postal Code</li>
+							<!-- You can also provide the two-letter ISO 3166-1 alpha-2 country code. -->
+							<li itemprop="addressCountry">Country</li>
+						</ul>
+					</div>
+					<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+						<img itemprop="thumbnail" src="http://dummyimage.com/150x150/dedede/0b9fb3.jpg&text=MM">
+						<figcaption itemprop="caption" >image description</figcaption>
+					</figure>
+				</section>
+
+				<!-- product -->
+				<section class="product" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+
+					<h3 itemprop="name">Product Name</h3>
+					<p itemprop="description">description of this product</p>
+					<p><a href="#" itemprop="url">url of this product</a></p>
+					<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+						<img itemprop="thumbnail" src="http://dummyimage.com/150x150/dedede/0b9fb3.jpg&text=PT">
+						<figcaption itemprop="caption" >image description</figcaption>
+					</figure>
+					<p>Price: <span itemprop="price">99.99€</span></p>
+					<p>category: <span itemprop="category">category</span></p>
+				</section>
+
+				<!-- comments -->
+				<section class="comments">
+
+					<div itemprop="comment" itemscope itemtype="https://schema.org/UserComments">
+						<p>comment time: <time itemprop="commentTime">10:00</time></p>
+						<p itemprop="commentText" >comment text</p>
+						<p>Website: <a itemprop="replyToUrl"href="#">comment text</a></p>
+						<div class="creator" itemprop="creator" itemscope itemtype="https://schema.org/Person">
+							<p>Name: <span itemprop="name">Mustermann</span></p>
+							<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+								<img itemprop="thumbnail" src="http://dummyimage.com/150x150/dedede/0b9fb3.jpg&text=PT">
+							</figure>
+
+						</div>
+					</div>
+
+				</section>
+
+			</main>
+
+		</section>
+
+	</body>
+
+</html>
