@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html itemscope itemtype="https://schema.org/Event">
+
+	<head>
+		<title>Schema.org Event</title>
+		<meta charset="UTF-8">
+	</head>
+	<div itemscope itemtype="http://schema.org/Event">
+</div>
+
+</div>
+
+	<body>
+
+		<section class="wrapper">
+
+			<!-- organizer-->
+			<section itemprop="organizer" itemscope itemtype="https://schema.org/Organization">
+
+				<!-- Logo of the organizer-->
+				<div>
+					<div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+						<figure itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+							<img itemprop="thumbnail" src="http://dummyimage.com/70x70/dedede/0b9fb3.jpg&text=L" width="35" height="35" alt="
+								Logo: Musterfirma GmbH">
+							<figcaption itemprop="caption">Organizer - Slogan</figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<!-- name-->
+				<p itemprop="name">Organizer</p>
+
+			</section>
+
+			<!-- location -->
+			<section>
+				
+				<div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+					<ul>
+						<li itemprop="name">Name of the Location</li>
+						<li itemprop="addressLocality">City</li>
+						<li itemprop="streetAddress">Street address</li>
+						<li itemprop="postalCode">Postal Code</li>
+						<li itemprop="addressCountry">Country</li>
+					</ul>
+				</div>
+	
+			</section>
+
+			<!-- about event -->
+			<section>
+				<!-- event name -->
+				<h1 itemprop="name">Name of the Event</h1>
+				<!-- start date -->
+				<p><time itemprop="startDate"  datetime="2015-09-25 15:00" >25.09.2015 15:00</time></p>
+				<!-- end date -->
+				<p><time itemprop="endDate"  datetime="2015-09-25 20:00" >25.09.2015 20:00</time></p>
+				<!-- duration -->
+				<p><time itemprop="duration"  datetime="0000-00-00 5:00" >5h</time></p>
+				<!-- description -->
+				<p itemprop="description">Description</p>
+			</section>
+
+			<!-- performer -->
+			<section>
+
+				<div itemprop="performer" itemscope itemtype="http://schema.org/Person">
+					<!-- name -->
+					<p itemprop="name">name</p>
+
+				</div>
+
+			</section>
+
+			<!-- offers -->
+			<section>
+
+				<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<!-- price -->
+					<p><span itemprop="price">99.99 <span itemprop="priceCurrency">EUR</span></span></p>
+					<!-- url -->
+					<p><a itemprop="url" href="#">website</a></p>
+					<!-- category -->
+					<p itemprop="category">concert</p>
+				</div>
+
+			</section>
+
+		</section>
+
+	</body>
+
+</html>
