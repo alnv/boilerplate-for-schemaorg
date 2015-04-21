@@ -4,3 +4,4 @@ Boilerplate for Schema.org Types
 ##available types
 
 - webpage
+- event
